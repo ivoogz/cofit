@@ -1,0 +1,1334 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+html{
+    scroll-behavior: smooth;
+}
+
+
+@media screen and (max-width: 600px) {
+
+
+    p{
+        font-size: 20px;
+    }
+
+    /*HEADER*/
+
+    h1 {
+        display: none;
+    }
+
+    #logo {
+        width: 90px;
+        margin: auto;
+        padding: 20px;
+    }
+
+    header {
+        width: 100%;
+        background-color: black;
+    }
+
+    #hamburguesa {
+        display: inline-block;
+        position: absolute;
+        right: 0;
+        top: 17px;
+        background-image: url("imagenes/menu.png");
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+
+    #hamburguesa li {
+        text-indent: -200px;
+        overflow: hidden;
+    }
+
+    #hamburguesa a {
+        text-decoration: none;
+        color: black;
+        display: block;
+        padding: 20px;
+    }
+
+    #hamburguesa li:first-child {
+        list-style: none;
+    }
+
+    #hamburguesa li:last-child {
+        display: none;
+    }
+
+    #botonera {
+        width: 100%;
+        text-align: center;
+        position: absolute;
+        left: -900px;
+        background-color: darkslategray;
+        transition: all 0.5s;
+    }
+
+    #botonera li {
+        list-style: none;
+    }
+
+    #botonera a {
+        text-decoration: none;
+        padding: 20px;
+        display: block;
+        color: white;
+    }
+
+    #botonera a:hover {
+        background-color: lightgreen;
+        color: black;
+        transition: all 0.5s;
+    }
+
+
+
+    #menu:target #hamburguesa li:last-child {
+        display: block;
+    }
+
+    #menu:target #hamburguesa li:first-child {
+        display: none;
+    }
+
+    #menu:target #botonera {
+        transition: all 0.5s;
+        left: 0px;
+        display: block;
+    }
+
+
+
+    /*Contenido Principal*/
+
+
+    main {
+        background-image: url("imagenes/inicio_cofit.jpg");
+        padding: 50px;
+        color: white;
+    }
+
+    main h2 {
+        padding-top: 20px;
+        padding-bottom: 20px;
+        text-align: center;
+        font-size: 40px;
+    }
+    main img{
+        width: 90%;
+        display: block;
+        margin: auto;
+    }
+
+    main p {
+        font-size: 14px;
+    }
+
+
+    /*RECETAS DULCES*/
+
+    #recetas article{
+        text-align: center;
+        padding-bottom: 40px;
+    } 
+    #recetas article p{
+        padding-bottom: 30px;
+    } 
+    article a{
+        padding: 10px;
+        background-color: green;
+        text-decoration: none;
+        color: white;
+        border-radius: 10%;
+        transition: all 1s;
+    }
+    article a:hover{
+        transition: all 1s;
+        padding: 20px;
+        background-color: rgb(0, 73, 0);
+    }
+    
+    .ingredientes{
+        position: fixed;
+        left: -1000px;
+        background-color: gray;
+        width: 60%;
+        padding: 20px;
+        margin: auto;
+        color: white;
+        text-align: center;
+        padding-bottom: 40px;
+        border: 2px solid black;
+        transition: all 1s;
+    }
+    .ingredientes ol{
+        margin: 20px;
+    }
+    .ingredientes ol li{
+        padding: 5px;
+    }
+    .ingredientes a{
+        padding: 10px;
+        text-decoration: none;
+        text-align: center;
+        color: white;
+        background-color: red;
+        border-radius: 10%;
+        transition: all 1s;
+    }
+    .ingredientes a:hover{
+        transition: all 1s;
+        padding: 20px;
+        border-radius: 10%;
+        background-color: rgb(138, 1, 1);
+    }
+    #articulo1:target #ingredientes1{
+        transition: all 0.5s;
+        left: 100px;
+        top: 200px;
+    }
+    #articulo2:target #ingredientes2{
+        transition: all 0.5s;
+        left: 100px;
+        top: 200px;
+    }
+    #articulo3:target #ingredientes3{
+        transition: all 0.5s;
+        left: 100px;
+        top: 200px;
+    }
+    #articulo4:target #ingredientes4{
+        transition: all 0.5s;
+        left: 100px;
+        top: 200px;
+    }
+    #articulo5:target #ingredientes5{
+        transition: all 0.5s;
+        left: 100px;
+        top: 200px;
+    }
+    #articulo6:target #ingredientes6{
+        transition: all 0.5s;
+        left: 100px;
+        top: 200px;
+    }
+
+    /*Secciones CON ARTICULO*/
+
+    section article {
+        width: 90%;
+        background-color: whitesmoke;
+        margin: auto;
+        margin-bottom: 30px;
+    }
+
+    section article img {
+        width: 100%;
+        padding: 20px;
+    }
+
+    section h2 {
+        text-align: center;
+        color: white;
+        font-size: 30px;
+        padding: 30px;
+    }
+
+    article h3 {
+        text-align: center;
+        font-size: 30px;
+    }
+
+    article p {
+        text-align: center;
+        padding: 20px;
+    }
+
+
+
+
+    /*GALERIA INSPIRACION*/
+
+    .imagen {
+        width: 85%;
+        background-color: whitesmoke;
+        margin: auto;
+        margin-bottom: 20px;
+        transition: all 0.5s;
+    }
+    .imagen img {
+        width: 100%;
+        padding: 10px;
+    }
+
+    #inspiracion p {
+        color: white;
+        text-align: center;
+        padding: 0px 30px 30px 30px;
+    }
+
+    section {
+        background-color: rgb(0, 97, 57);
+        padding-bottom: 20px;
+    }
+    .imagen:hover{
+        transition: all 0.5s;
+        width: 90%;
+    }
+
+    /*SECCIONES DESTACADAS*/
+
+
+    .destacado {
+        background-color: black;
+        text-align: center;
+        padding: 20px;
+    }
+
+    .destacado img{
+        width: 90%;
+    }
+
+    .destacado h2 {
+        color: white;
+    }
+
+    .destacado p {
+        color: white;
+        padding: 20px;
+    }
+
+
+    /*PRIMERA SECCION DESTACADA*/
+
+    #visible{
+        padding-bottom: 30px;
+    }
+
+    #visible a{
+        background-color: green;
+        padding: 10px;
+        color: white;
+        text-decoration: none;
+        margin: 20px;
+        border-radius: 10%;
+        transition: all 0.5s;
+    }
+    #visible a:hover{
+        transition: all 0.5s;
+        background-color: rgb(0, 71, 0);
+        padding: 20px;
+    }
+
+    #visible p{
+        margin-bottom: 30px;
+    }
+
+    #noVisible{
+        display: none;
+        background-color: black;
+        text-align: center;
+        padding-bottom: 30px;
+        z-index: 1000;
+    }
+
+    #noVisible img{
+        width: 80%;
+        text-align: center;
+    }
+
+    #noVisible p{
+        margin: 20px;
+    }
+
+    #noVisible a{
+        background-color: red;
+        text-decoration: none;
+        color:white;
+        padding: 10px;
+        margin-bottom: 20px;
+        transition: all 0.5s;
+        border-radius: 20%;
+    }
+    #noVisible a:hover{
+        transition: all 0.5s;
+        background-color: rgb(100, 0, 0);
+        padding: 20px;
+    }
+    
+    #recetaDestacada:target #visible{
+        display: none;
+    }
+    #recetaDestacada:target #noVisible{
+        display: block;
+        position: fixed;
+        top: 20px;
+        left: 20px;
+        bottom: 20px;
+        right: 20px;
+        overflow-y: scroll;
+    }
+    div h3{
+        color: white;
+        font-size: 30px;
+        padding: 20px;
+    }
+    /*SECCION DESTACADA VIDEO*/
+
+    section iframe{
+        width: 100%;
+    }
+
+    /*FOOTER*/
+
+    footer{
+        background-color: black;
+        color: white;
+        padding: 20px;
+    }
+    #info{
+        text-align: center;
+    }
+    #redes{
+        display: block;
+        text-align: center;
+    }
+    #redes img{
+        display: inline-block;
+        width: 10%;
+        margin: 20px;
+    }
+}
+
+@media screen and (min-width:601px) and (max-width: 900px) {
+
+    h1 {
+        display: none;
+    }
+    h2{
+        font-size: 40px;
+    }
+    h3{
+        font-size: 25px;
+    }
+
+    p{
+        font-size: 18px;
+    }
+
+    /*HEADER*/
+
+
+    #logo {
+        width: 90px;
+        margin: auto;
+        padding: 20px;
+    }
+
+    header {
+        width: 100%;
+        background-color: black;
+    }
+
+    #menu{
+        display: inline-block;
+        position: absolute;
+        right: 0;
+        top: 20px;
+    }
+    #hamburguesa {
+        display: none;
+    }
+
+    #botonera {
+        display: inline-block;
+        transition: all 0.5s;
+    }
+
+    #botonera li {
+        list-style: none;
+        display: inline-block;
+    }
+
+    #botonera a {
+        text-decoration: none;
+        padding: 20px;
+        display: block;
+        color: white;
+    }
+
+    #botonera a:hover {
+        background-color: lightgreen;
+        color: black;
+        transition: all 0.5s;
+    }
+
+
+
+
+    /*Contenido Principal*/
+
+
+    main {
+        background-image: url(imagenes/inicio_cofit.jpg);
+        padding: 100px;
+        color: white;
+    }
+
+    main h2 {
+        padding: 20px;
+        text-align: center;
+        font-size: 50px;
+    }
+    main img{
+        width: 90%;
+        display: block;
+        margin: auto;
+    }
+    main p {
+        padding: 20px;
+        text-align: center;
+    }
+
+
+    /*RECETAS DULCES*/
+    #recetas{
+        display: flex;
+        margin: auto;
+        text-align: center;
+        background-color: rgb(0, 97, 57);
+        padding-bottom: 20px;
+        flex-wrap: wrap;
+        justify-content: center;
+    } 
+    #recetas h2{
+        text-align: center;
+        color: white;
+        padding: 20px;
+        flex-direction: row;
+        flex-basis: 100%;
+    }
+    #recetas article{
+        width: 45%;
+        display: inline-block;
+        background-color: white;
+        padding: 20px;
+        margin: 10px;
+        padding-bottom: 30px;
+        text-align: left;
+        flex-direction: column;
+    }
+    #recetas article img{
+        width: 100%;
+        padding: 10px;
+    }
+    #recetas article p{
+        margin: 20px 0px 40px 0px;
+    }
+    article a{
+        padding: 10px;
+        background-color: green;
+        text-decoration: none;
+        text-align: center;
+        color: white;
+        border-radius: 10%;
+        transition: all 1s;
+    }
+    article a:hover{
+        transition: all 1s;
+        padding: 20px;
+        background-color: rgb(0, 73, 0);
+    }
+    
+    .ingredientes{
+        position: fixed;
+        left: -1000px;
+        background-color: gray;
+        width: 60%;
+        padding: 20px;
+        margin: auto;
+        color: white;
+        text-align: center;
+        padding-bottom: 40px;
+        border: 2px solid black;
+        transition: all 1s;
+    }
+    .ingredientes ol{
+        margin: 20px;
+    }
+    .ingredientes ol li{
+        padding: 5px;
+    }
+    .ingredientes a{
+        padding: 10px;
+        text-decoration: none;
+        text-align: center;
+        color: white;
+        background-color: red;
+        border-radius: 10%;
+        transition: all 1s;
+    }
+    .ingredientes a:hover{
+        transition: all 1s;
+        padding: 20px;
+        border-radius: 10%;
+        background-color: rgb(138, 1, 1);
+    }
+    #articulo1:target #ingredientes1{
+        transition: all 0.5s;
+        margin: auto;
+        left: 20%; 
+        top: 20%;
+    }
+    #articulo2:target #ingredientes2{
+        transition: all 0.5s;
+        margin: auto;
+        left: 20%; 
+        top: 20%;
+    }
+    #articulo3:target #ingredientes3{
+        transition: all 0.5s; 
+        margin: auto;
+        left: 20%; 
+        top: 20%;
+    }
+    #articulo4:target #ingredientes4{
+        transition: all 0.5s;
+        margin: auto;
+        left: 20%; 
+        top: 20%;
+    }
+    #articulo5:target #ingredientes5{
+        transition: all 0.5s;
+        margin: auto;
+        left: 20%; 
+        top: 20%;
+    }
+    #articulo6:target #ingredientes6{
+        transition: all 0.5s;
+        margin: auto;
+        left: 20%; 
+        top: 20%;
+    }
+
+   
+
+
+
+    /*GALERIA INSPIRACION*/
+
+    .imagen {
+        width: 40%;
+        display: inline-block;
+        background-color: white;
+        margin: 10px;
+        transition: all 0.5s;
+    }
+    .imagen img {
+        width: 100%;
+        padding: 10px;
+    }
+
+    #inspiracion p {
+        color: white;
+        text-align: center;
+        padding: 0px 30px 30px 30px;
+    }
+
+    #inspiracion{
+        background-color: rgb(0, 97, 57);
+        padding-bottom: 20px;
+        text-align: center;
+    }
+    #inspiracion h2{
+        text-align: center;
+        color: white;
+        font-size: 40px;
+        padding: 20px;
+    }
+    .imagen:hover{
+        transition: all 0.5s;
+        padding: 5px;
+    }
+
+    /*SECCIONES DESTACADAS*/
+
+
+    
+    .destacado {
+        background-color: darkslategray;
+        text-align: center;
+    }
+
+    .destacado img{
+        width: 90%;
+    }
+
+    .destacado h2 {
+        color: white;
+        padding: 20px;
+    }
+    .destacado h3{
+        text-align: left;
+    }
+
+    .destacado p {
+        color: white;
+        padding: 20px;
+        text-align: left;
+    }
+
+
+    /*PRIMERA SECCION DESTACADA*/
+
+    #visible{
+        padding-bottom: 30px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    #visible img{
+        display: inline-block;
+        width: 40%;
+        text-align: center;
+        margin-top: 20px;
+    }
+
+    #visible a{
+        background-color: green;
+        padding: 10px;
+        color: white;
+        text-decoration: none;
+        margin: 20px;
+        border-radius: 10%;
+        transition: all 0.5s;
+    }
+    #visible a:hover{
+        transition: all 0.5s;
+        background-color: rgb(0, 71, 0);
+        padding: 20px;
+    }
+
+    #visible p{
+        margin-bottom: 30px;
+    }
+
+    #noVisible{
+        display: none;
+        background-color: black;
+        text-align: center;
+        padding-bottom: 30px;
+        z-index: 1000;
+    }
+
+    #noVisible img{
+        width: 40%;
+        padding: 10px;
+        flex-basis: 30%;
+        flex-direction: column;
+        display: inline-block;
+    }
+    #noVisible div{
+        width: 60%;
+        flex-direction: column;
+    }
+    #noVisible h3{
+        text-align: left;
+    }
+    #noVisible p{
+        text-align: left;
+    }
+
+    #noVisible a{
+        background-color: red;
+        text-align: left;
+        text-decoration: none;
+        color:white;
+        padding: 10px;
+        margin-bottom: 20px;
+        transition: all 0.5s;
+        border-radius: 20%;
+    }
+    
+    #noVisible a:hover{
+        background-color: rgb(92, 0, 0);
+        padding: 20px;
+        transition: all 0.5s;
+    }
+    
+    #recetaDestacada:target #visible{
+        display: none;
+    }
+    #recetaDestacada:target #noVisible{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        position: fixed;
+        top: 20px;
+        left: 20px;
+        bottom: 20px;
+        right: 20px;
+        overflow-y: scroll;
+    }
+    div h3{
+        color: white;
+        padding: 20px;
+    }
+    /*SECCION DESTACADA VIDEO*/
+
+
+    .info{
+        display: inline-block;
+        position: relative;
+        width: 40%;
+    }
+    .info h2{
+        text-align: left;
+    }
+    .info p{
+        text-align: left;
+    }
+    section iframe{
+        text-align: center;
+        padding: 20px;
+        width: 50%;
+    }
+    #video{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    /*RESEÑAS*/
+
+    #reseñas{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        background-color: rgb(0, 97, 57);;
+        text-align: center;
+        padding-bottom: 30px;
+    }
+    #reseñas article{
+        width: 45%;
+        margin: auto;
+        margin: 10px;
+        display: inline-block;
+        background-color: white;
+        flex-direction: column;
+    }
+    #reseñas article img{
+        width: 100%;
+        padding: 10px;
+        background-color: white;
+    }
+    #reseñas h2{
+        padding: 20px;
+        color: white;
+        flex-direction: row;
+        flex-basis: 100%;
+    }
+    #reseñas article h3{
+        text-align: left;
+        padding-left: 20px;
+    }
+    #reseñas article p{
+        padding: 20px;
+        text-align: left;
+    }
+
+    /*FOOTER*/
+
+    footer{
+        background-color: black;
+        color: white;
+        padding: 20px;
+    }
+    #info{
+        text-align: left;
+        display: inline-block;
+        width: 40%;
+    }
+    #redes{
+        margin: auto;
+        display: inline-block;
+        width: 50%;
+        text-align: right;
+    }
+    #redes img{
+        display: inline-block;
+        width: 40px;
+        margin: 20px;
+    }
+}
+
+@media screen and (min-width: 901px) {
+
+    h1 {
+        display: none;
+    }
+    h2{
+        font-size: 40px;
+    }
+    h3{
+        font-size: 25px;
+    }
+
+    p{
+        font-size: 18px;
+    }
+
+    /*HEADER*/
+
+
+    #logo {
+        width: 90px;
+        margin: auto;
+        padding: 20px;
+    }
+
+    header {
+        width: 100%;
+        background-color: black;
+    }
+
+    #menu{
+        display: inline-block;
+        position: absolute;
+        right: 0;
+        top: 20px;
+    }
+    #hamburguesa {
+        display: none;
+    }
+
+    #botonera {
+        display: inline-block;
+        transition: all 0.5s;
+    }
+
+    #botonera li {
+        list-style: none;
+        display: inline-block;
+    }
+
+    #botonera a {
+        text-decoration: none;
+        padding: 20px;
+        display: block;
+        color: white;
+    }
+
+    #botonera a:hover {
+        background-color: lightgreen;
+        color: black;
+        transition: all 0.5s;
+    }
+
+
+
+    /*Contenido Principal*/
+
+
+    main {
+        background-image: url(imagenes/inicio_cofit.jpg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        color: white;
+        width: 100%;
+        padding: 100px;
+    }
+    main h2 {
+        padding: 20px;
+        text-align: center;
+        font-size: 50px;
+    }
+    main p {
+        padding: 20px;
+        text-align: center;
+    }
+
+
+    /*RECETAS DULCES*/
+    #recetas{
+        display: flex;
+        margin: auto;
+        text-align: center;
+        background-color: rgb(0, 97, 57);
+        padding-bottom: 20px;
+        flex-wrap: wrap;
+        justify-content: center;
+    } 
+    #recetas h2{
+        text-align: center;
+        color: white;
+        padding: 20px;
+        flex-direction: row;
+        flex-basis: 100%;
+    }
+    #recetas article{
+        width: 30%;
+        display: inline-block;
+        background-color: white;
+        padding: 20px;
+        margin: 10px;
+        padding-bottom: 30px;
+        text-align: left;
+        flex-direction: column;
+    }
+    #recetas article img{
+        width: 100%;
+        padding: 10px;
+    }
+    #recetas article p{
+        margin: 20px 0px 40px 0px;
+    }
+    article a{
+        padding: 10px;
+        background-color: green;
+        text-decoration: none;
+        text-align: center;
+        color: white;
+        border-radius: 10%;
+        transition: all 1s;
+    }
+    article a:hover{
+        transition: all 1s;
+        padding: 20px;
+        background-color: rgb(0, 73, 0);
+    }
+    
+    .ingredientes{
+        position: fixed;
+        left: -1000px;
+        background-color: gray;
+        width: 60%;
+        padding: 20px;
+        margin: auto;
+        color: white;
+        text-align: center;
+        padding-bottom: 40px;
+        border: 2px solid black;
+        transition: all 1s;
+    }
+    .ingredientes ol{
+        margin: 20px;
+    }
+    .ingredientes ol li{
+        padding: 5px;
+    }
+    .ingredientes a{
+        padding: 10px;
+        text-decoration: none;
+        text-align: center;
+        color: white;
+        background-color: red;
+        border-radius: 10%;
+        transition: all 1s;
+    }
+    .ingredientes a:hover{
+        transition: all 1s;
+        padding: 20px;
+        border-radius: 10%;
+        background-color: rgb(138, 1, 1);
+    }
+    #articulo1:target #ingredientes1{
+        transition: all 0.5s;
+        margin: auto;
+        left: 20%; 
+        top: 20%;
+    }
+    #articulo2:target #ingredientes2{
+        transition: all 0.5s;
+        margin: auto;
+        left: 20%; 
+        top: 20%;
+    }
+    #articulo3:target #ingredientes3{
+        transition: all 0.5s; 
+        margin: auto;
+        left: 20%; 
+        top: 20%;
+    }
+    #articulo4:target #ingredientes4{
+        transition: all 0.5s;
+        margin: auto;
+        left: 20%; 
+        top: 20%;
+    }
+    #articulo5:target #ingredientes5{
+        transition: all 0.5s;
+        margin: auto;
+        left: 20%; 
+        top: 20%;
+    }
+    #articulo6:target #ingredientes6{
+        transition: all 0.5s;
+        margin: auto;
+        left: 20%; 
+        top: 20%;
+    }
+
+   
+
+
+
+    /*GALERIA INSPIRACION*/
+
+    .imagen {
+        width: 20%;
+        display: inline-block;
+        background-color: white;
+        margin: 10px;
+        transition: all 0.5s;
+    }
+    .imagen img {
+        width: 100%;
+        padding: 10px;
+    }
+
+    #inspiracion p {
+        color: white;
+        text-align: center;
+        padding: 0px 30px 30px 30px;
+    }
+
+    #inspiracion{
+        background-color: rgb(0, 97, 57);
+        padding-bottom: 20px;
+        text-align: center;
+    }
+    #inspiracion h2{
+        text-align: center;
+        color: white;
+        font-size: 40px;
+        padding: 20px;
+    }
+    .imagen:hover{
+        transition: all 0.5s;
+        padding: 5px;
+    }
+
+    /*SECCIONES DESTACADAS*/
+
+
+    
+    .destacado {
+        background-color: darkslategray;
+        text-align: center;
+    }
+
+    .destacado img{
+        width: 90%;
+    }
+
+    .destacado h2 {
+        color: white;
+        padding: 20px;
+    }
+    .destacado h3{
+        text-align: left;
+    }
+
+    .destacado p {
+        color: white;
+        padding: 20px;
+        text-align: left;
+    }
+
+
+    /*PRIMERA SECCION DESTACADA*/
+
+    #visible{
+        padding-bottom: 30px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    #visible img{
+        display: inline-block;
+        width: 40%;
+        text-align: center;
+        margin-top: 20px;
+    }
+
+    #visible a{
+        background-color: green;
+        padding: 10px;
+        color: white;
+        text-decoration: none;
+        margin: 20px;
+        border-radius: 10%;
+        transition: all 0.5s;
+    }
+    #visible a:hover{
+        transition: all 0.5s;
+        background-color: rgb(0, 71, 0);
+        padding: 20px;
+    }
+
+    #visible p{
+        margin-bottom: 30px;
+        font-size: 25px;
+    }
+
+    #noVisible{
+        display: none;
+        background-color: black;
+        text-align: center;
+        padding-bottom: 30px;
+        z-index: 1000;
+    }
+
+    #noVisible img{
+        width: 40%;
+        padding: 10px;
+        flex-basis: 30%;
+        flex-direction: column;
+        display: inline-block;
+    }
+    #noVisible div{
+        width: 60%;
+        flex-direction: column;
+    }
+    #noVisible h3{
+        text-align: left;
+    }
+    #noVisible p{
+        text-align: left;
+    }
+
+    #noVisible a{
+        background-color: red;
+        text-align: left;
+        text-decoration: none;
+        color:white;
+        padding: 10px;
+        margin-bottom: 20px;
+        transition: all 0.5s;
+        border-radius: 20%;
+    }
+    
+    #noVisible a:hover{
+        background-color: rgb(92, 0, 0);
+        padding: 20px;
+        transition: all 0.5s;
+    }
+    
+    #recetaDestacada:target #visible{
+        display: none;
+    }
+    #recetaDestacada:target #noVisible{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        position: fixed;
+        top: 20px;
+        left: 20px;
+        bottom: 20px;
+        right: 20px;
+        overflow-y: scroll;
+    }
+    div h3{
+        color: white;
+        padding: 20px;
+    }
+    /*SECCION DESTACADA VIDEO*/
+
+
+    .info{
+        display: inline-block;
+        position: relative;
+        width: 40%;
+    }
+    .info h2{
+        text-align: left;
+    }
+    .info p{
+        text-align: left;
+    }
+    section iframe{
+        text-align: center;
+        padding: 20px;
+        width: 40%;
+    }
+    #video{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    /*RESEÑAS*/
+
+    #reseñas{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        background-color: rgb(0, 97, 57);;
+        text-align: center;
+        padding-bottom: 30px;
+    }
+    #reseñas article{
+        width: 23%;
+        margin: auto;
+        margin: 10px;
+        display: inline-block;
+        background-color: white;
+        flex-direction: column;
+    }
+    #reseñas article img{
+        width: 100%;
+        padding: 10px;
+        background-color: white;
+    }
+    #reseñas h2{
+        padding: 20px;
+        color: white;
+        flex-direction: row;
+        flex-basis: 100%;
+    }
+    #reseñas article h3{
+        text-align: left;
+        padding-left: 20px;
+    }
+    #reseñas article p{
+        padding: 20px;
+        text-align: left;
+    }
+
+    /*FOOTER*/
+
+    footer{
+        background-color: black;
+        color: white;
+        padding: 20px;
+    }
+    #info{
+        text-align: left;
+        display: inline-block;
+        width: 40%;
+    }
+    #redes{
+        margin: auto;
+        display: inline-block;
+        width: 50%;
+        text-align: right;
+    }
+    #redes img{
+        display: inline-block;
+        width: 40px;
+        margin: 20px;
+    }
+}
+
