@@ -194,31 +194,37 @@ html{
         transition: all 0.5s;
         left: 100px;
         top: 200px;
+        z-index: 3000;
     }
     #articulo2:target #ingredientes2{
         transition: all 0.5s;
         left: 100px;
         top: 200px;
+        z-index: 3000;
     }
     #articulo3:target #ingredientes3{
         transition: all 0.5s;
         left: 100px;
         top: 200px;
+        z-index: 3000;
     }
     #articulo4:target #ingredientes4{
         transition: all 0.5s;
         left: 100px;
         top: 200px;
+        z-index: 3000;
     }
     #articulo5:target #ingredientes5{
         transition: all 0.5s;
         left: 100px;
         top: 200px;
+        z-index: 3000;
     }
     #articulo6:target #ingredientes6{
         transition: all 0.5s;
         left: 100px;
         top: 200px;
+        z-index: 3000;
     }
 
     /*Secciones CON ARTICULO*/
@@ -587,36 +593,42 @@ html{
         margin: auto;
         left: 20%; 
         top: 20%;
+        z-index: 3000;
     }
     #articulo2:target #ingredientes2{
         transition: all 0.5s;
         margin: auto;
         left: 20%; 
         top: 20%;
+        z-index: 3000;
     }
     #articulo3:target #ingredientes3{
         transition: all 0.5s; 
         margin: auto;
         left: 20%; 
         top: 20%;
+        z-index: 3000;
     }
     #articulo4:target #ingredientes4{
         transition: all 0.5s;
         margin: auto;
         left: 20%; 
         top: 20%;
+        z-index: 3000;
     }
     #articulo5:target #ingredientes5{
         transition: all 0.5s;
         margin: auto;
         left: 20%; 
         top: 20%;
+        z-index: 3000;
     }
     #articulo6:target #ingredientes6{
         transition: all 0.5s;
         margin: auto;
         left: 20%; 
         top: 20%;
+        z-index: 3000;
     }
 
    
@@ -1047,36 +1059,42 @@ html{
         margin: auto;
         left: 20%; 
         top: 20%;
+        z-index: 3000;
     }
     #articulo2:target #ingredientes2{
         transition: all 0.5s;
         margin: auto;
         left: 20%; 
         top: 20%;
+        z-index: 3000;
     }
     #articulo3:target #ingredientes3{
         transition: all 0.5s; 
         margin: auto;
         left: 20%; 
         top: 20%;
+        z-index: 3000;
     }
     #articulo4:target #ingredientes4{
         transition: all 0.5s;
         margin: auto;
         left: 20%; 
         top: 20%;
+        z-index: 3000;
     }
     #articulo5:target #ingredientes5{
         transition: all 0.5s;
         margin: auto;
         left: 20%; 
         top: 20%;
+        z-index: 3000;
     }
     #articulo6:target #ingredientes6{
         transition: all 0.5s;
         margin: auto;
         left: 20%; 
         top: 20%;
+        z-index: 3000;
     }
 
    
